@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Website Loaded!");
+    console.log("Website Loaded!"); // Menghindari karakter tersembunyi
 });
+
 function createHeart() {
     let heart = document.createElement("div");
     heart.innerHTML = "❤"; // Bisa diganti dengan simbol lain seperti 💖
-    heart.style.position = "absolute";
+    heart.style.position = "fixed"; // Supaya tidak terpengaruh scroll
     heart.style.left = Math.random() * (window.innerWidth - 30) + "px";
     heart.style.bottom = "0px"; 
     heart.style.fontSize = Math.random() * 20 + 20 + "px"; 
@@ -25,4 +26,5 @@ function createHeart() {
     }, 50);
 }
 
+// Perbaiki spasi aneh pada angka 300
 setInterval(createHeart, 300);
