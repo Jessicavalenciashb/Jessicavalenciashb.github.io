@@ -1,56 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hati Berjatuhan</title>
-    <style>
-        body {
-            background-color: black; /* Biar lebih estetik */
-            overflow: hidden;
-        }
-    </style>
-</head>
-<body>
-    
-    <script src="script.js"></script> <!-- Menghubungkan script.js -->
-</body>
-</html>
-    <title>My GitHub Website</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-</header>
-            </ul>
-        </nav>
-    </header>
-
- <main>
-        <h1>Selamat datang di perpustakaan online Jessica</h1>
-        <b1>Selamat datang di Perpustakaan Digital Jessica – Mari masuk perpustakaan 📚✨
-Akses buku, di mana saja. Mari keperpustakaan guys!.</b1></p>
-    </main>
-<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Saya</title>
+    function createHeart() {
+    let heart = document.createElement("div");
+    heart.innerHTML = "❤"; // Bisa diganti dengan simbol lain seperti 💖
+    heart.style.position = "absolute";
+    heart.style.left = Math.random() * (window.innerWidth - 30) + "px";
+    heart.style.bottom = "0px"; 
+    heart.style.fontSize = Math.random() * 20 + 20 + "px"; 
+    heart.style.opacity = Math.random() * 0.5 + 0.5; 
+    heart.style.zIndex = "1000"; 
+
+    document.body.appendChild(heart);
+
+    let speed = Math.random() * 3 + 2;
+    let move = setInterval(() => {
+        let currentBottom = parseFloat(heart.style.bottom) || 0;
+        if (currentBottom > window.innerHeight) {
+            clearInterval(move);
+            heart.remove();
+        } else {
+            heart.style.bottom = currentBottom + speed + "px";
+        }
+    }, 50);
+}
+
+setInterval(createHeart, 300);
+    <title>My GitHub Website</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
-        h1{
+        body {
+            background-color: white; /* Ubah ke warna normal */
+            color: black;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        h1 {
             text-align: center;
         }
+
         .btn {
- display: inline-block;
+            display: inline-block;
             background-color: #007bff;
             color: white;
             padding: 10px 20px;
@@ -61,18 +54,53 @@ Akses buku, di mana saja. Mari keperpustakaan guys!.</b1></p>
         .btn:hover {
             background-color: #0056b3;
         }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #007bff;
+        }
     </style>
 </head>
 <body>
 
-    <p>Klik tombol di bawah untuk mengunjungi Perpustakaan UIl:</p>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <a href=""https://lib.ui.ac.id " target="_blank" class="btn">
-        Kunjungi Perpustakaan UI
-    </a>
+    <main>
+        <h1>Selamat datang di Perpustakaan Digital Jessica</h1>
+        <p><strong>Mari masuk perpustakaan 📚✨</strong></p>
+        <p>Akses buku, di mana saja. Mari ke perpustakaan guys!</p>
 
-</body>
-</html>
+        <p>Klik tombol di bawah untuk mengunjungi Perpustakaan UI:</p>
+        <a href="https://lib.ui.ac.id" target="_blank" class="btn">
+            Kunjungi Perpustakaan UI
+        </a>
+    </main>
+
     <script src="script.js"></script>
+
 </body>
 </html>
