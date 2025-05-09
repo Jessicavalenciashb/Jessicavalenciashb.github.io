@@ -1,70 +1,175 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #d0eaff; /* Baby blue background */
-            padding: 20px;
-            color: #00334e; /* Warna teks biru gelap */
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Jessica Library</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #d0eaff, #f0faff);
+      color: #00334e;
+    }
 
-        table {
-            width: 50%;
-            margin: auto;
-            border-collapse: collapse;
-            background: #ffffff;
-            box-shadow: 0 0 10px rgba(0, 51, 78, 0.1); /* Bayangan lembut */
-        }
+    body {
+      display: flex;
+      flex-direction: column;
+    }
 
-        th, td {
-            padding: 10px;
-            border: 1px solid #a8d8f0; /* Border biru muda */
-        }
+    header {
+      background-color: #b3ddf5;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 51, 78, 0.2);
+      text-align: center;
+    }
 
-        th {
-            background-color: #89cff0; /* Baby blue gelap */
-            color: #00334e; /* Teks biru gelap */
-        }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #00334e;
+    }
 
-        a {
-            text-decoration: none;
-            color: #005a9c; /* Warna link biru */
-        }
+    nav {
+      margin-top: 10px;
+    }
 
-        a:hover {
-            color: #00334e; /* Saat hover, lebih gelap */
-        }
-    </style>
+    nav a {
+      text-decoration: none;
+      color: #00334e;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #89cff0;
+      border-radius: 5px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #61b2e4;
+    }
+
+    main {
+      flex: 1;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 30px;
+      color: #005a9c;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .info-card {
+      width: 90%;
+      max-width: 600px;
+      margin: auto;
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 51, 78, 0.2);
+      overflow: hidden;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 15px 20px;
+      border-bottom: 1px solid #e0f2fa;
+      text-align: left;
+    }
+
+    th {
+      background-color: #89cff0;
+      color: #00334e;
+    }
+
+    td {
+      background-color: #f9fcff;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    a {
+      color: #005a9c;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #00334e;
+    }
+
+    footer {
+      background-color: #b3ddf5;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #00334e;
+    }
+  </style>
 </head>
 <body>
-    <h2>About Us</h2>
-    <table>
+
+  <header>
+    <h1>Jessica Library</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tentang Kami</h2>
+
+    <div class="info-card">
+      <table>
         <tr>
-            <th>Informasi</th>
-            <th>Detail</th>
+          <th>Informasi</th>
+          <th>Detail</th>
         </tr>
         <tr>
-            <td>Nama</td>
-            <td>[Jessica Valencia Sihombing]</td>
+          <td>Nama</td>
+          <td>Jessica Valencia Sihombing</td>
         </tr>
         <tr>
-            <td>E-Mail</td>
-            <td>[Jessicasihombing83@gmail.com]</td>
+          <td>Email</td>
+          <td>Jessicasihombing83@gmail.com</td>
         </tr>
         <tr>
-            <td>Hobby</td>
-            <td>[Menyanyi]</td>
+          <td>Hobi</td>
+          <td>Menyanyi</td>
         </tr>
         <tr>
-            <td>Instagram</td>
-            <td><a href="https://instagram.com/[username]" target="_blank">@vcia_lin</a></td>
+          <td>Instagram</td>
+          <td><a href="https://instagram.com/vcia_lin" target="_blank">@vcia_lin</a></td>
         </tr>
-    </table>
+      </table>
+    </div>
+  </main>
+
+  <footer>
+    © 2025 Jessica Library — Terima kasih telah mengenal kami lebih dekat.
+  </footer>
+
 </body>
 </html>
 
