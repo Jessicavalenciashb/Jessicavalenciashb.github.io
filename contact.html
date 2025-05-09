@@ -1,129 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #d0eaff; /* Baby blue background */
-            color: #00334e; /* Dark blue text */
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Jessica Library</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #d0eaff, #f0faff);
+      color: #00334e;
+      display: flex;
+      flex-direction: column;
+    }
 
-        header {
-            background-color: #89cff0; /* Baby blue darker */
-            padding: 10px 0;
-            text-align: center;
-        }
+    header {
+      background-color: #b3ddf5;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 4px 8px rgba(0, 51, 78, 0.2);
+    }
 
-        .menu {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      color: #00334e;
+    }
 
-        .menu li {
-            display: inline;
-            margin-right: 15px;
-        }
+    nav {
+      margin-top: 10px;
+    }
 
-        .menu li a {
-            text-decoration: none;
-            color: #00334e;
-            font-weight: bold;
-        }
+    nav a {
+      text-decoration: none;
+      color: #00334e;
+      font-weight: bold;
+      padding: 10px 20px;
+      background-color: #89cff0;
+      border-radius: 5px;
+      margin: 0 10px;
+      transition: background-color 0.3s ease;
+    }
 
-        .menu li a:hover {
-            color: #005a9c;
-        }
+    nav a:hover {
+      background-color: #61b2e4;
+    }
 
-        .contact-form {
-            max-width: 500px;
-            margin: 30px auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 51, 78, 0.1);
-        }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
 
-        .contact-form h2 {
-            text-align: center;
-            color: #005a9c;
-        }
+    .contact-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 500px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 51, 78, 0.2);
+      animation: fadeIn 1s ease;
+    }
 
-        label {
-            display: block;
-            margin-top: 10px;
-            text-align: left;
-        }
+    .contact-form h2 {
+      margin-top: 0;
+      color: #005a9c;
+      text-align: center;
+    }
 
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            border: 1px solid #a8d8f0;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
 
-        button {
-            background-color: #89cff0;
-            color: #00334e;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            margin-top: 15px;
-            cursor: pointer;
-            font-weight: bold;
-            transition: background-color 0.3s ease;
-        }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #a8d8f0;
+      border-radius: 6px;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
 
-        button:hover {
-            background-color: #61b2e4;
-        }
+    textarea {
+      resize: vertical;
+    }
 
-        #responseMessage {
-            margin-top: 15px;
-            color: #005a9c;
-            text-align: center;
-        }
-    </style>
+    button {
+      background-color: #89cff0;
+      color: #00334e;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #61b2e4;
+    }
+
+    #responseMessage {
+      margin-top: 15px;
+      text-align: center;
+      color: #005a9c;
+    }
+
+    footer {
+      background-color: #b3ddf5;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+      color: #00334e;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Jessica Library</h1>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="about.html">Tentang</a>
+    </nav>
+  </header>
 
+  <main>
     <section class="contact-form">
-        <h2>Get in Touch</h2>
-        <form id="contactForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+      <h2>Hubungi Kami</h2>
+      <form id="contactForm">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" name="name" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <label for="message">Pesan:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit">Send Message</button>
-        </form>
-        <p id="responseMessage"></p>
+        <button type="submit">Kirim Pesan</button>
+      </form>
+      <p id="responseMessage"></p>
     </section>
+  </main>
 
-    <script src="script.js"></script>
+  <footer>
+    © 2025 Jessica Library — Terima kasih telah menghubungi kami.
+  </footer>
 
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('responseMessage').textContent = "Pesan Anda telah terkirim. Terima kasih!";
+      this.reset();
+    });
+  </script>
 </body>
 </html>
