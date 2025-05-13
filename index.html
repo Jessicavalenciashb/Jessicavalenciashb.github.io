@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registrasi - Jessica Library</title>
+    <title>Jessica Library</title>
     <style>
         body {
             background: linear-gradient(to bottom, #d0eaff, #e6f5ff);
@@ -13,126 +13,162 @@
             padding: 0;
         }
 
-        header, footer {
+        header {
             background-color: #b3ddf5;
             text-align: center;
-            padding: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        .form-container {
-            max-width: 500px;
-            margin: 40px auto;
-            background: #ffffffaa;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        .library-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #00334e;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
         }
 
-        h1 {
-            text-align: center;
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            background-color: #89cff0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li:hover {
+            background-color: #61b2e4;
+            transform: scale(1.05);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00334e;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
             color: #005a9c;
         }
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-weight: bold;
+        main {
+            text-align: center;
+            padding: 50px 20px;
         }
 
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #89cff0;
-            border-radius: 8px;
-            margin-top: 5px;
+        h1 {
+            color: #005a9c;
+            font-size: 28px;
+            margin-bottom: 20px;
         }
 
-        textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #89cff0;
-            border-radius: 8px;
-            margin-top: 5px;
-            resize: vertical;
-        }
-
-        .checkbox-container {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-        }
-
-        .checkbox-container input {
-            margin-right: 10px;
+        p {
+            font-size: 18px;
+            margin: 10px 0;
         }
 
         .btn {
-            display: block;
-            width: 100%;
-            margin-top: 25px;
-            padding: 12px;
+            display: inline-block;
             background-color: #89cff0;
             color: #00334e;
-            border: none;
+            padding: 12px 25px;
             border-radius: 8px;
-            font-size: 16px;
             font-weight: bold;
-            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+            margin-top: 15px;
         }
 
         .btn:hover {
             background-color: #61b2e4;
+            transform: translateY(-3px);
         }
 
-        .back-link {
-            display: block;
+        footer {
+            background-color: #b3ddf5;
             text-align: center;
-            margin-top: 15px;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #00334e;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials a {
+            margin: 0 8px;
+            color: #00334e;
             text-decoration: none;
+            font-size: 16px;
+        }
+
+        .socials a:hover {
             color: #005a9c;
-            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .library-title {
+                font-size: 28px;
+            }
+
+            .btn {
+                padding: 10px 20px;
+            }
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h2>Registrasi Anggota Baru</h2>
-</header>
+    <header>
+        <div class="library-title">📚 Jessica Library</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="register.html">Registrasi</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div class="form-container">
-    <p>Silakan isi formulir di bawah ini untuk mendaftar sebagai anggota Jessica Library dan mendapatkan akses ke berbagai koleksi digital kami.</p>
-    <form action="submit_registration.php" method="post">
-        <label for="name">Nama Lengkap</label>
-        <input type="text" id="name" name="name" required>
+    <main>
+        <h1>Selamat datang di Perpustakaan Digital Jessica</h1>
+        <p><strong>Mari masuk perpustakaan 📚✨</strong></p>
+        <p>Akses buku, di mana saja. Yuk ke perpustakaan!</p>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+        <a href="https://lib.ui.ac.id" target="_blank" class="btn">
+            Kunjungi Perpustakaan UI
+        </a>
+    </main>
 
-        <label for="phone">Nomor HP</label>
-        <input type="text" id="phone" name="phone" required>
-
-        <label for="address">Alamat</label>
-        <textarea id="address" name="address" rows="3" required></textarea>
-
-        <label for="password">Kata Sandi</label>
-        <input type="password" id="password" name="password" required>
-
-        <div class="checkbox-container">
-            <input type="checkbox" id="agree" name="agree" required>
-            <label for="agree">Saya menyetujui <a href="#">kebijakan privasi</a></label>
+    <footer>
+        © 2025 Jessica Library. Terima kasih telah berkunjung.<br>
+        <div class="socials">
+            <a href="#">Facebook</a> | 
+            <a href="https://instagram.com/vcia_lin" target="_blank">Instagram</a> | 
+            <a href="#">Twitter</a>
         </div>
-
-        <button type="submit" class="btn">Daftar Sekarang</button>
-    </form>
-    <a href="index.html" class="back-link">← Kembali ke Beranda</a>
-</div>
-
-<footer>
-    © 2025 Jessica Library. Selamat bergabung!
-</footer>
+    </footer>
 
 </body>
 </html>
