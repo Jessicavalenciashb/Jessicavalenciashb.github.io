@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Perkalian - Jessica Library</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #d0eaff, #e6f5ff);
+            color: #00334e;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #b3ddf5;
+            text-align: center;
+            padding: 30px 20px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .library-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #00334e;
+            margin-bottom: 10px;
+            animation: fadeInDown 1s ease;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav ul li {
+            background-color: #89cff0;
+            border-radius: 10px;
+            padding: 10px 20px;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li:hover {
+            background-color: #61b2e4;
+            transform: scale(1.05);
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #00334e;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #005a9c;
+        }
+
+        main {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            color: #005a9c;
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .table-container {
+            overflow-x: auto;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 700px;
+            background-color: #ffffffcc;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #b3ddf5;
+            color: #00334e;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0faff;
+        }
+
+        footer {
+            background-color: #b3ddf5;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #00334e;
+        }
+
+        .socials {
+            margin-top: 10px;
+        }
+
+        .socials a {
+            margin: 0 8px;
+            color: #00334e;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .socials a:hover {
+            color: #005a9c;
+        }
+
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .library-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="library-title">📚 Jessica Library</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="registration.html">Registrasi</a></li>
+                <li><a href="tabel-perkalian.html">Tabel Perkalian</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Tabel Perkalian 1–10</h1>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>x</th>
+                        <!-- Header kolom 1-10 -->
+                        <!-- Dapat juga dibuat dinamis dengan JavaScript -->
+                        <th>1</th><th>2</th><th>3</th><th>4</th><th>5</th>
+                        <th>6</th><th>7</th><th>8</th><th>9</th><th>10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Baris perkalian -->
+                    <!-- Setiap baris mewakili angka pengali -->
+                    <!-- 1 sampai 10 -->
+                    <!-- Loop manual -->
+                    <!-- Kamu bisa ubah ke JS jika ingin lebih dinamis -->
+                    <!-- Berikut adalah hasil statis -->
+                    <!-- Kamu bisa juga gunakan Python/JS untuk generate otomatis -->
+                    <!-- Tapi HTML statis ini cukup untuk penggunaan biasa -->
+
+                    <!-- Baris 1 -->
+                    <tr><th>1</th><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td></tr>
+                    <tr><th>2</th><td>2</td><td>4</td><td>6</td><td>8</td><td>10</td><td>12</td><td>14</td><td>16</td><td>18</td><td>20</td></tr>
+                    <tr><th>3</th><td>3</td><td>6</td><td>9</td><td>12</td><td>15</td><td>18</td><td>21</td><td>24</td><td>27</td><td>30</td></tr>
+                    <tr><th>4</th><td>4</td><td>8</td><td>12</td><td>16</td><td>20</td><td>24</td><td>28</td><td>32</td><td>36</td><td>40</td></tr>
+                    <tr><th>5</th><td>5</td><td>10</td><td>15</td><td>20</td><td>25</td><td>30</td><td>35</td><td>40</td><td>45</td><td>50</td></tr>
+                    <tr><th>6</th><td>6</td><td>12</td><td>18</td><td>24</td><td>30</td><td>36</td><td>42</td><td>48</td><td>54</td><td>60</td></tr>
+                    <tr><th>7</th><td>7</td><td>14</td><td>21</td><td>28</td><td>35</td><td>42</td><td>49</td><td>56</td><td>63</td><td>70</td></tr>
+                    <tr><th>8</th><td>8</td><td>16</td><td>24</td><td>32</td><td>40</td><td>48</td><td>56</td><td>64</td><td>72</td><td>80</td></tr>
+                    <tr><th>9</th><td>9</td><td>18</td><td>27</td><td>36</td><td>45</td><td>54</td><td>63</td><td>72</td><td>81</td><td>90</td></tr>
+                    <tr><th>10</th><td>10</td><td>20</td><td>30</td><td>40</td><td>50</td><td>60</td><td>70</td><td>80</td><td>90</td><td>100</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        © 2025 Jessica Library. Terima kasih telah belajar bersama kami.<br>
+        <div class="socials">
+            <a href="#">Facebook</a> | 
+            <a href="https://instagram.com/vcia_lin" target="_blank">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+</body>
+</html>
