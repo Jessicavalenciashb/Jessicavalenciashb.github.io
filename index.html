@@ -155,6 +155,68 @@
             }
         }
     </style>
+    .collection-section {
+    background-color: #ffffffdd;
+    padding: 30px;
+    margin: 40px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.collection-section h2 {
+    color: #005a9c;
+    margin-bottom: 20px;
+}
+
+.book-collection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.book-card {
+    background-color: #e6f5ff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 260px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book-card h3 {
+    font-size: 20px;
+    color: #00334e;
+    margin: 10px 0 5px;
+}
+
+.book-card p {
+    margin: 0 0 15px;
+    font-size: 16px;
+    color: #00334e;
+}
+
+@media (max-width: 768px) {
+    .book-collection {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .book-card {
+        width: 90%;
+    }
+}
+
 </head>
 <body>
 
@@ -178,6 +240,34 @@
         <a href="https://lib.ui.ac.id" target="_blank" class="btn">
             Kunjungi Perpustakaan UI
         </a>
+        <section class="collection-section">
+    <h2>📖 Daftar Koleksi Buku & Novel</h2>
+    <p>Berikut adalah beberapa koleksi buku dan novel yang dapat kamu baca atau unduh secara gratis:</p>
+
+    <div class="book-collection">
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/id/4/4e/Sampul_Laskar_Pelangi.jpg" alt="Laskar Pelangi">
+            <h3>Laskar Pelangi</h3>
+            <p>Andrea Hirata</p>
+            <a href="https://example.com/laskar-pelangi.pdf" class="btn" target="_blank">📄 Baca / Unduh PDF</a>
+        </div>
+
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/id/1/16/Sampul_Bumi_-_Tere_Liye.jpg" alt="Bumi - Tere Liye">
+            <h3>Bumi</h3>
+            <p>Tere Liye</p>
+            <a href="https://example.com/bumi.pdf" class="btn" target="_blank">📄 Baca / Unduh PDF</a>
+        </div>
+
+        <div class="book-card">
+            <img src="https://upload.wikimedia.org/wikipedia/id/9/97/Perahu_Kertas_sampul.jpg" alt="Perahu Kertas">
+            <h3>Perahu Kertas</h3>
+            <p>Dee Lestari</p>
+            <a href="https://example.com/perahu-kertas.pdf" class="btn" target="_blank">📄 Baca / Unduh PDF</a>
+        </div>
+    </div>
+</section>
+
 
         <section class="event-section">
             <h2>✨ Event Seru dari Perpustakaan UI!</h2>
