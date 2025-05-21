@@ -234,25 +234,85 @@
 </head>
 <body>
 
-    <h1>Daftar Buku Perpustakaan</h1>
+   <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koleksi Buku</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .buku-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .buku-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 180px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .buku-item:hover {
+            transform: scale(1.05);
+        }
+        .buku-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .buku-item a {
+            display: block;
+            padding: 12px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .buku-item a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
 
-    <div class="buku">
-        <div class="buku-item">
-            <img src="https://kampungilmubojonegoro.or.id/wp-content/uploads/2024/05/berani-tidak-disukai-1.jpeg" alt="Cover Buku 1">
-            <p><a href="https://lib.atim.ac.id/uploaded_files/temporary/DigitalCollection/Zjc3OWE2ZGZmZTQyMDFhNzEwNDVmZDhjZjZlMmMxYmU0ZDFlMmQwNA==.pdf" target="_blank">Berani Tidak Disukai</a></p>
-        <div class="buku">
-        <div class="buku-item">
-            <img src="https://upload.wikimedia.org/wikipedia/id/8/8e/Laskar_pelangi_sampul.jpg" alt="Cover Buku 1">
-            <p><a href="https://wongbagoes.files.wordpress.com/2008/04/laskar-pelangi.pdf" target="_blank">Laskar Pelangi</a></p>
-        </div>
-        <div class="buku-item">
-            <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565658920i/1398034.jpg" alt="Cover Buku 2">
-            <p><a href="https://mtsaluswahbergas.sch.id/wp-content/uploads/2024/11/Bumi-Manusia-by-Pramoedya-Ananta-Toer.pdf" target="_blank">Bumi Manusia</a></p>
-        </div>
-        <div class="buku-item">
-            <img src="https://upload.wikimedia.org/wikipedia/id/8/89/Sang_Pemimpi_sampul.jpg" alt="Cover Buku 3">
-            <p><a https://kalteng.kemenag.go.id/file/majalah/1613240702216.pdf" target="_blank">Sang Pemimpi</a></p>
+<h1>Koleksi Buku Digital</h1>
+
+<div class="buku-container">
+    <div class="buku-item">
+        <img src="https://upload.wikimedia.org/wikipedia/id/d/dc/Laskar_Pelangi_sampul.jpg" alt="Laskar Pelangi">
+        <a href="https://wongbagoes.files.wordpress.com/2008/04/laskar-pelangi.pdf" target="_blank">Laskar Pelangi</a>
+    </div>
+
+    <div class="buku-item">
+        <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Harry_Potter_and_the_Sorcerer%27s_Stone.jpg" alt="Harry Potter">
+        <a href="https://example.com/harry-potter.pdf" target="_blank">Harry Potter</a>
+    </div>
+
+    <div class="buku-item">
+        <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/To_Kill_a_Mockingbird_%28first_edition_cover%29.jpg" alt="To Kill a Mockingbird">
+        <a href="https://example.com/to-kill-a-mockingbird.pdf" target="_blank">To Kill a Mockingbird</a>
+    </div>
+
+    <!-- Tambahkan buku lainnya di sini -->
+</div>
+
 </body>
+</html>
+
 </html>
     <footer>
         © 2025 Jessica Library. Terima kasih telah berkunjung.<br>
